@@ -1,8 +1,8 @@
-# spring-book-store-inventory-system
-spring-book-store-inventory-system
+# spring-annotation-book-store-inventory-system
+spring-annotation-book-store-inventory-system
 
 # Project Overview  
-The spring book store inventory system project is a basic Java application that demonstrates a book inventory system. It utilizes object-oriented programming principles and simulates the interactions between customers, books and suppliers. It also uses Spring framework.
+The spring annotation book store inventory system project is a basic Java application that demonstrates a book inventory system. It utilizes object-oriented programming principles and simulates the interactions between customers, books and suppliers. It also uses Spring framework.
 
 # Features   
 * Manage customer information.
