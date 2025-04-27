@@ -6,18 +6,19 @@ import com.amit.book.inventory.exception.InvalidBookPriceException;
 import com.amit.book.inventory.service.BookService;
 import com.amit.book.inventory.util.SpringContextUtil;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.sql.SQLException;
 import java.util.Scanner;
 
-@AllArgsConstructor
+
 @Component
 public class BookController {
 
     private static final Scanner scanner = new Scanner(System.in);
-
-    private final BookService bookService;
+    @Autowired
+    private BookService bookService;
 
 
     public void run() throws SQLException, InvalidBookNameException, InvalidBookIDException, InvalidBookPriceException {

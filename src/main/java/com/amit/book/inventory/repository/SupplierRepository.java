@@ -6,7 +6,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.sql.*;
-@AllArgsConstructor
+
 @Repository
 public class SupplierRepository {
 

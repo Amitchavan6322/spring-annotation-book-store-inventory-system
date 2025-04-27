@@ -15,13 +15,13 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 
-@AllArgsConstructor
+
 @Service
 public class BookService extends LibraryService implements BookServiceInterface {
 
     private static Scanner scanner = new Scanner(System.in);
     @Autowired
-    private final BookRepository bookRepository;
+    private BookRepository bookRepository;
 
     public void acceptingBookInfo() throws InvalidBookIDException, InvalidBookNameException, InvalidBookPriceException, SQLException {
 

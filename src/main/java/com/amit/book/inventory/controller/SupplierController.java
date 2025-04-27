@@ -8,16 +8,18 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.sql.SQLException;
 import java.util.Scanner;
-@AllArgsConstructor
+
 @Component
 public class SupplierController {
 
     private static final Scanner scanner = new Scanner(System.in);
-    private final SupplierService supplierService;
+    @Autowired
+    private SupplierService supplierService;
     public void run() throws SQLException {
         int option = 0;
 

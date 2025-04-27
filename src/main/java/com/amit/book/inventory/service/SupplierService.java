@@ -12,14 +12,14 @@ import org.springframework.stereotype.Service;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-@AllArgsConstructor
+
 @Service
 public class SupplierService implements SupplierServiceInterface {
 
     private static Scanner scanner = new Scanner(System.in);
 
     @Autowired
-    private final SupplierRepository supplierRepository;
+    private SupplierRepository supplierRepository;
 
     public void acceptingSupplierInfo() throws SQLException {
 

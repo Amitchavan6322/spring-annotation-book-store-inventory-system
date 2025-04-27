@@ -14,14 +14,14 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Scanner;
 
-@AllArgsConstructor
+
 @Service
 public class CustomerService implements CustomerServiceInterface {
 
     private static final Scanner scanner = new Scanner(System.in);
 
     @Autowired
-    private final CustomerRepository customerRepository;
+    private CustomerRepository customerRepository;
 
     public void acceptCustomerInfo() throws SQLException {
 
